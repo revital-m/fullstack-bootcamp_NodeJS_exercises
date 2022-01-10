@@ -1,16 +1,25 @@
 /**
-//? 1. What is the difference between import and require?
-Import: Is used to refer to an ES module. Other file types can’t be imported. They are permitted only in ES modules and the specifier of this statement can either be a URL-style relative path or a package name.
+//? Require:
+            You can have dynamic loading where the loaded module name isn't predefined /static, or where you conditionally load a module only if it's "truly required" (depending on certain code flow).
+            Loading is synchronous. That means if you have multiple requires, they are loaded and processed one by one.
 
-Require: The basic functionality of require is that it reads a JavaScript file, executes the file, and then proceeds to return the export object. It not only allows you to add built-in core Node modules but also community-based modules (node_modules), and local modules in the desired program. There are various inbuilt modules in a node like – HTTP module, URL module, query string module, path module and more.
+            In NodeJS, require() is a built-in function to include external modules that exist in separate files.
+            require() statement basically reads a JavaScript file, executes it,
+            and then proceeds to return the export object. require()
+            statement not only allows to add built-in core NodeJS modules but also community-based and local modules.
 
-//? 2. How can you enable using the import syntax using node js?
-If you want to use import module then you have to save the file with '.mjs' extension.
+//? ES6 Imports:
+            You can use named imports to selectively load only the pieces you need. That can save memory.
+            Import can be asynchronous (and in current ES6 Module Loader, it in fact is) and can perform a little better.
 
-//? 3. Give 2 node.js environment variables that are not available when using the import syntax.
+            import() & export() statements are used to refer to an ES module.
+            Other modules with file types such as .json cannot be imported with these statements.
+            They are permitted to be used only in ES modules and the specifier of this statement can 
+            either be a URL-style relative path or a package name. Also, the import statement cannot be used
+            in embedded scripts unless such script has a type="module". A dynamic import can be used for
+            scripts whose type is not “module”
 
-//? 4. Create 3 functions using the export/import syntax.
-
-//? 5. Import the file system module using the import syntax.
+            One of the major differences between require() and import() is that require() can be called from anywhere inside the program whereas 
+            import() cannot be called conditionally, it always runs at the beginning of the file.
 
 */
