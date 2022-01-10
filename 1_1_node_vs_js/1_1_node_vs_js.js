@@ -1,5 +1,5 @@
 /** 
-//? 1.
+//? 1. What are 3 things node.js has that the client side javascript doesn’t have. And the reasons why.
 //* file system access.
     reason: nodejs uses v8 engine that written in c++ which support file system access, so the nodejs also supports that function.
 
@@ -11,7 +11,7 @@
 */
 
 /** 
-//? 2.
+//? 2. What are 3 things the client side javascript has that node.js doesn’t have. And the reasons why.
 //* window.
     reason: the nodejs doesnt work with the DOM and the window object works with the DOM.
 
